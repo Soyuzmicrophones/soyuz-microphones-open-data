@@ -1,0 +1,15 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "product_name": "The Launcher",
+  "product_type": "Inline microphone preamp",
+  "category": "Preamp",
+  "signal_domain": "Microphone level",
+  "power_requirements": [
+    "48V phantom power"
+  ],
+  "intended_applications": [
+    "Dynamic microphones",
+    "Ribbon microphones",
+    "Low-output microphone gain staging"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "model": "V1",
+  "microphone_type": "Dynamic microphone",
+  "transducer_type": "Dynamic",
+  "electronics": "Passive",
+  "polar_pattern": "Cardioid",
+  "intended_applications": [
+    "Vocals",
+    "Electric guitar cabinets",
+    "Stage performance",
+    "Broadcast"
+  ],
+  "voicing_character": [
+    "Focused",
+    "Controlled",
+    "Presence-enhanced",
+	"Defined"
+  ],
+  "frequency_response": {
+    "data_type": "Relative frequency response",
+    "format": "CSV and PNG",
+    "note": "Provided for comparative reference"
+  },
+  "country_of_origin": "Russia",
+  "release_status": "Production model"
+}

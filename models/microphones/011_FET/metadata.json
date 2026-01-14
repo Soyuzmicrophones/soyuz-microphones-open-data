@@ -1,0 +1,24 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "model": "011 FET",
+  "microphone_type": "Studio condenser microphone",
+  "transducer_type": "Condenser",
+  "electronics": "FET",
+  "polar_pattern": "Cardioid",
+  "intended_applications": [
+    "Vocals",
+    "Acoustic instruments",
+    "General studio recording"
+  ],
+  "voicing_character": [
+    "Defined",
+    "Musical"
+  ],
+  "frequency_response": {
+    "data_type": "Relative frequency response",
+    "format": "CSV and PNG",
+    "note": "Provided for comparative reference"
+  },
+  "country_of_origin": "Russia",
+  "release_status": "Production model"
+}

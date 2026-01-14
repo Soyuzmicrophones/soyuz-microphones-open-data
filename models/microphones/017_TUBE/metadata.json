@@ -1,0 +1,20 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "model": "017 TUBE",
+  "microphone_type": "Large-diaphragm condenser microphone",
+  "transducer_type": "Condenser",
+  "electronics": "Tube",
+  "polar_pattern": "Cardioid",
+  "intended_applications": [
+    "Studio vocals",
+    "Acoustic instruments",
+    "Voiceover"
+  ],
+  "frequency_response": {
+    "data_type": "Relative frequency response",
+    "format": "CSV and PNG",
+    "note": "Provided for comparative reference"
+  },
+  "country_of_origin": "Russia",
+  "release_status": "Production model"
+}

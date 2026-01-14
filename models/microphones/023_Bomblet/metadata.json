@@ -1,0 +1,22 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "model": "023 Bomblet",
+  "series": "023",
+  "microphone_type": "Small-diaphragm condenser microphone",
+  "transducer_type": "Condenser",
+  "electronics": "FET",
+  "polar_pattern": "Cardioid",
+  "intended_applications": [
+    "Drum overheads",
+    "Acoustic instruments",
+    "Percussion",
+    "Bass drum"
+  ],
+  "frequency_response": {
+    "data_available": true,
+    "format": "CSV",
+    "description": "Relative frequency response"
+  },
+  "country_of_origin": "Russia",
+  "release_status": "In production"
+}

@@ -1,0 +1,31 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "product_name": "The Launcher Deluxe",
+  "product_type": "Inline microphone preamp",
+  "category": "Preamp",
+  "signal_domain": [
+    "Microphone level",
+    "Instrument level, microphone level (Saturate mode)"
+  ],
+  "operating_modes": [
+    {
+      "mode_name": "Launcher",
+      "summary": "Gain boost with transformer coloration for dynamic and ribbon microphones",
+      "phantom_power_required": true
+    },
+    {
+      "mode_name": "Saturate",
+      "summary": "Transformer coloration without gain for compatible transormerless condenser microphones and instruments",
+      "phantom_power_required": "Only when used with transformerless condenser microphones requiring phantom power"
+    }
+  ],
+  "important_notes": [
+    "Not a DI-box."
+  ],
+  "intended_applications": [
+    "Dynamic microphones",
+    "Ribbon microphones",
+    "Transformerless condenser microphones (Saturate mode, compatible use)",
+    "Instruments (Saturate mode)"
+  ]
+}

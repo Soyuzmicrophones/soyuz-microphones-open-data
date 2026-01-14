@@ -1,0 +1,44 @@
+{
+  "max_gain_db": 60,
+  "gain_step_db": 5,
+  "mic_input_impedance_ohms": 1200,
+  "di_input_impedance_ohms": ">1000000",
+  "output_impedance_ohms": "<80",
+  "gain_range_db": "10–60",
+  "frequency_response": [
+    {
+      "range_hz": "20–20000",
+      "tolerance_db": "±0.5",
+      "gain_db": 40,
+      "load_ohms": 600
+    },
+    {
+      "range_hz": "8–40000",
+      "tolerance_db": "±5",
+      "gain_db": 40,
+      "load_ohms": 600
+    }
+  ],
+  "equivalent_input_noise_db": -120,
+  "thd_plus_n_percent": "<0.02",
+  "thd_plus_n_conditions": {
+    "gain_db": 40,
+    "load_ohms": 600,
+    "output_level_dbu": 18
+  },
+  "high_pass_filter": {
+    "slope_db_per_oct": 18,
+    "minus_3db_frequencies_hz": [40, 55, 70, 90, 120, 150, 180, 220, 270, 330]
+  },
+  "max_output": [
+    { "level_dbu": 27, "thd_percent": 0.2 },
+    { "level_dbu": 31, "thd_percent": 1.5 }
+  ],
+  "dimensions_mm": {
+    "width": 440,
+    "front_panel_width": 483,
+    "depth": 214,
+    "height": 44
+  },
+  "weight_kg": 4.96
+}

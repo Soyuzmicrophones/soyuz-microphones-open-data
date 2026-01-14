@@ -1,0 +1,13 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "product_name": "The Lakeside",
+  "product_type": "Microphone preamplifier",
+  "category": "Preamp",
+  "topology": "Solid-state",
+  "stepped_gain": true,
+  "intended_applications": [
+    "Studio microphone preamplification",
+    "Transformer coloration workflows",
+    "Tracking and recording"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "launcher_mode_gain_db": 26,
+  "saturate_mode_gain_db": 0,
+  "phantom_power_required": true,
+  "works_as_di_box": false
+}

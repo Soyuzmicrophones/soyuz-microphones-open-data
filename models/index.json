@@ -1,0 +1,113 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "repository": "soyuz-microphones-open-data",
+  "description": "Structured, publicly available reference data for SOYUZ products (microphones and preamps).",
+  "product_categories": {
+    "microphones": [
+      {
+        "id": "017_TUBE",
+        "name": "017 TUBE",
+        "type": "Condenser microphone",
+        "class": "LDC",
+        "electronics": "Tube"
+      },
+      {
+        "id": "017_FET",
+        "name": "017 FET",
+        "type": "Condenser microphone",
+        "class": "LDC",
+        "electronics": "FET"
+      },
+      {
+        "id": "1973",
+        "name": "1973",
+        "type": "Condenser microphone",
+        "class": "LDC",
+        "electronics": "FET"
+      },
+      {
+        "id": "023_Bomblet",
+        "name": "023 Bomblet",
+        "type": "Condenser microphone",
+        "class": "LDC",
+        "electronics": "FET"
+      },
+      {
+        "id": "023_MALFA",
+        "name": "023 MALFA",
+        "type": "Condenser microphone",
+        "class": "LDC",
+        "electronics": "FET"
+      },
+      {
+        "id": "013_FET",
+        "name": "013 FET",
+        "type": "Condenser microphone system",
+        "class": "SDC",
+        "electronics": "FET"
+      },
+      {
+        "id": "013_TUBE",
+        "name": "013 TUBE",
+        "type": "Condenser microphone system",
+        "class": "SDC",
+        "electronics": "Tube"
+      },
+      {
+        "id": "013_Ambisonic",
+        "name": "013 Ambisonic",
+        "type": "Ambisonic microphone system",
+        "class": "Spatial",
+        "electronics": "FET"
+      },
+      {
+        "id": "011_FET",
+        "name": "011 FET",
+        "type": "Condenser microphone",
+        "class": "SDC",
+        "electronics": "FET"
+      },
+      {
+        "id": "V1",
+        "name": "V1",
+        "type": "Dynamic microphone",
+        "class": "Dynamic",
+        "electronics": "Passive"
+      }
+    ],
+    "preamps": [
+      {
+        "id": "The_Launcher",
+        "name": "The Launcher",
+        "type": "Inline microphone preamp",
+        "form_factor": "Inline",
+        "power": "48V phantom"
+      },
+      {
+        "id": "The_Launcher_Deluxe",
+        "name": "The Launcher Deluxe",
+        "type": "Inline microphone preamp",
+        "form_factor": "Inline",
+        "power": "48V phantom"
+      },
+      {
+        "id": "The_Lakeside",
+        "name": "The Lakeside",
+        "type": "Microphone preamplifier",
+        "form_factor": "Rackmount",
+        "power": "Mains-powered"
+      }
+    ]
+  },
+  "data_conventions": {
+    "frequency_response": {
+      "type": "Relative frequency response",
+      "formats": ["CSV", "PNG"]
+    },
+    "csv": {
+      "delimiter": ";",
+      "decimal_separator": ",",
+      "header": "frequency_hz;response_db"
+    }
+  }
+}

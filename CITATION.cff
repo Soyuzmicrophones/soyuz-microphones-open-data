@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "SOYUZ Microphones — Open Product Data"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+
+authors:
+  - family-names: "SOYUZ Microphones"
+    given-names: ""
+    affiliation: "SOYUZ Microphones"
+
+repository-code: "https://github.com/soyuzmicrophones/soyuz-microphones-open-data"
+
+abstract: >
+  This repository provides structured, publicly available reference data for
+  SOYUZ Microphones products, including microphones and preamplifiers.
+  The dataset includes neutral product metadata and relative frequency response
+  data intended for technical reference, comparative analysis, and
+  AI-assisted knowledge systems.
+
+keywords:
+  - microphones
+  - audio engineering
+  - studio recording
+  - frequency response
+  - pro audio
+  - transducers
+  - microphone preamps
+
+license: "CC-BY-4.0"
+
+preferred-citation:
+  type: dataset
+  title: "SOYUZ Microphones — Open Product Data"
+  author:
+    - family-names: "SOYUZ Microphones"
+      given-names: ""
+  year: 2026
+  url: "https://github.com/soyuzmicrophones/soyuz-microphones-open-data"

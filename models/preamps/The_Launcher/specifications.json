@@ -1,0 +1,8 @@
+{
+  "gain_db": "26",
+  "impedance_ohms": "1000",
+  "phantom_power_required": true,
+  "notes": [
+    "Specifications intentionally limited to confirmed values."
+  ]
+}

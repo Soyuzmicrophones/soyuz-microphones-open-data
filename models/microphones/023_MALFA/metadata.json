@@ -1,0 +1,25 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "series": "023",
+  "model": "023 MALFA",
+  "related_models": {
+    "same_series": ["023 Bomblet"],
+    "difference_note": "Different voicing and intended application focus compared to 023 Bomblet"
+  },
+  "microphone_type": "Condenser microphone",
+  "transducer_type": "Condenser",
+  "electronics": "FET",
+  "polar_pattern": "Cardioid",
+  "intended_applications": [
+    "Vocals",
+    "Acoustic instruments",
+    "Close-miking applications"
+  ],
+  "frequency_response": {
+    "data_type": "Relative frequency response",
+    "format": "CSV and PNG",
+    "note": "Provided for comparative reference"
+  },
+  "country_of_origin": "Russia",
+  "release_status": "Production model"
+}

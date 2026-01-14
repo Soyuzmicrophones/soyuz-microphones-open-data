@@ -1,0 +1,25 @@
+{
+  "manufacturer": "SOYUZ Microphones",
+  "model": "1973",
+  "microphone_type": "Studio condenser microphone",
+  "transducer_type": "Condenser",
+  "electronics": "FET",
+  "polar_pattern": "Cardioid",
+  "intended_applications": [
+    "Vocals",
+    "Electric guitar cabinets",
+    "Drum room",
+    "Creative studio recording"
+  ],
+  "voicing_character": [
+    "Vintage-inspired",
+    "Character-focused"
+  ],
+  "frequency_response": {
+    "data_type": "Relative frequency response",
+    "format": "CSV and PNG",
+    "note": "Provided for comparative reference"
+  },
+  "country_of_origin": "Russia",
+  "release_status": "Production model"
+}
