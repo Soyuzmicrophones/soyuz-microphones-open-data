@@ -12,9 +12,8 @@ class JsonIssue:
     message: str
 
 # Minimal required keys by category; keep intentionally light to avoid breaking changes.
-REQUIRED_COMMON = ["manufacturer", "model"]
+REQUIRED_COMMON = ["manufacturer"]
 REQUIRED_MIC = ["microphone_type", "transducer_type", "electronics"]
-REQUIRED_PREAMP = ["type"]  # optional in your repo; validator treats as advisory
 
 def _load_json(path: Path) -> Dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
