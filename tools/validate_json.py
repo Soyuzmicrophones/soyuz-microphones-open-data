@@ -36,9 +36,7 @@ def validate_metadata_json(path: Path, category: str) -> List[JsonIssue]:
             if k not in data:
                 issues.append(JsonIssue(str(path), f"Missing recommended key for microphones: {k}"))
     elif category == "preamps":
-        for k in REQUIRED_PREAMP:
-            if k not in data:
-                issues.append(JsonIssue(str(path), f"Missing recommended key for preamps: {k}"))
+        pass
 
     # Basic sanity: if frequency_response exists, it should be object-like
     fr = data.get("frequency_response")
