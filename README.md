@@ -1,5 +1,7 @@
 # SOYUZ Microphones — Open Product Data
 
+📄 Русская версия README доступна в файле README.ru.md
+
 This repository provides structured, publicly available reference data for selected SOYUZ Microphones products.
 
 The goal of this project is to offer neutral, machine-readable product information that may be used for:
