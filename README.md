@@ -86,11 +86,13 @@ Curves may be smoothed and averaged.
 
 ## Data usage and licensing
 
-Unless stated otherwise:
-- data may be reused for research, documentation, and analysis
-- attribution to SOYUZ Microphones is required
+Unless otherwise stated, all data in this repository is licensed under the
+Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
-See the LICENSE file for details.
+You are free to share and adapt the data for any purpose, provided that
+appropriate credit is given to SOYUZ Microphones.
+
+Use of the SOYUZ Microphones name, trademarks, or logos is not granted by this license.
 
 ---
 
