@@ -14,6 +14,17 @@ The repository is intentionally non-promotional and focuses on consistency, clar
 
 ---
 
+## Stable versions and citation
+
+For stable, citable references, prefer **tagged releases** over the `main` branch.
+
+- Use GitHub **Releases** (e.g., `v1.x.x`) for long-lived links to JSON/CSV assets
+- Schema changes (field names/types, file layout) follow semantic versioning: **MAJOR** breaks, **MINOR** adds, **PATCH** fixes
+
+A frozen schema summary is maintained in `SCHEMA.md`.
+
+---
+
 ## Repository structure
 
 All products are organized under the `models` directory and grouped by product category.
@@ -58,6 +69,10 @@ Depending on the model, directories may include:
 
 Frequency response data is provided for comparative reference only.
 
+Additional notes:
+- For most microphone models, capsules are **detachable / interchangeable** (see per-model metadata)
+- Any non-quantitative descriptors are explicitly marked as `subjective_non_quantitative`
+
 ---
 
 ### Preamps
@@ -67,6 +82,7 @@ Preamplifier products are located under:
 models/preamps/
 
 Preamp directories include:
+- note that **The Launcher** / **The Launcher Deluxe** use non-standard phantom power logic (documented in per-model metadata)
 - structured metadata for classification and use-case context
 - tabulated technical specifications where applicable
 
@@ -83,6 +99,9 @@ Frequency response data, where provided:
 - does not disclose proprietary measurement methodology
 
 Curves may be smoothed and averaged.
+
+Data conventions:
+- Where subjective, non-quantitative statements are included, they are tagged as `subjective_non_quantitative`
 
 ---
 

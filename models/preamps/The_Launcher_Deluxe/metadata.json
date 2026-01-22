@@ -1,31 +1,84 @@
 {
   "manufacturer": "SOYUZ Microphones",
-  "product_name": "The Launcher Deluxe",
-  "product_type": "Inline microphone preamp",
-  "category": "Preamp",
-  "signal_domain": [
-    "Microphone level",
-    "Instrument level, microphone level (Saturate mode)"
-  ],
-  "operating_modes": [
+  "model": "The Launcher Deluxe",
+
+  "classification": {
+    "product_category": "microphone_preamplifier",
+    "device_type": "inline_mic_preamp",
+    "topology": "transformer_colored",
+    "intended_market_segment": "professional_studio"
+  },
+
+  "modes": [
     {
-      "mode_name": "Launcher",
-      "summary": "Gain boost with transformer coloration for dynamic and ribbon microphones",
-      "phantom_power_required": true
+      "name": "Launcher",
+      "intended_sources": [
+        "dynamic_microphone",
+        "ribbon_microphone"
+      ],
+      "gain_db": 26,
+      "phantom_power": {
+        "required_for_device_operation": true,
+        "passed_to_microphone": false
+      },
+      "disclaimer": "In Launcher mode, phantom power is required to operate the device and is not passed through to the connected microphone."
     },
     {
-      "mode_name": "Saturate",
-      "summary": "Transformer coloration without gain for compatible transormerless condenser microphones and instruments",
-      "phantom_power_required": "Only when used with transformerless condenser microphones requiring phantom power"
+      "name": "Saturate",
+      "intended_sources": [
+        "transformerless_condenser_microphone",
+        "instrument_level_sources"
+      ],
+      "gain_db": 0,
+      "phantom_power": {
+        "required_for_device_operation": false,
+        "passed_to_microphone": true
+      },
+      "disclaimer": "In Saturate mode, phantom power is passed through to the connected microphone."
     }
   ],
-  "important_notes": [
-    "Not a DI-box."
-  ],
-  "intended_applications": [
-    "Dynamic microphones",
-    "Ribbon microphones",
-    "Transformerless condenser microphones (Saturate mode, compatible use)",
-    "Instruments (Saturate mode)"
-  ]
+
+  "connectivity": {
+    "input_type": [
+      "XLR_mic_in"
+    ],
+    "output_type": [
+      "XLR_mic_out"
+    ],
+    "di_functionality": false
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "add_gain_to_dynamic_mics",
+      "add_gain_to_ribbon_mics",
+      "transformer_coloration",
+      "signal_chain_enhancement"
+    ],
+    "environment_assumptions": [
+      "studio",
+      "live_sound"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "transformer_character",
+      "harmonic_enrichment",
+      "enhanced_presence",
+      "smooth_saturation"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

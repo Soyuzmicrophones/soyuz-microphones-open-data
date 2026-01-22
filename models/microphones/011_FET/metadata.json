@@ -1,24 +1,70 @@
 {
   "manufacturer": "SOYUZ Microphones",
   "model": "011 FET",
-  "microphone_type": "Studio condenser microphone",
-  "transducer_type": "Condenser",
-  "electronics": "FET",
-  "polar_pattern": "Cardioid",
-  "intended_applications": [
-    "Vocals",
-    "Acoustic instruments",
-    "General studio recording"
-  ],
-  "voicing_character": [
-    "Defined",
-    "Musical"
-  ],
-  "frequency_response": {
-    "data_type": "Relative frequency response",
-    "format": "CSV and PNG",
-    "note": "Provided for comparative reference"
+
+  "classification": {
+    "microphone_category": "small_diaphragm_condenser",
+    "transducer_type": "condenser",
+    "electronics_type": "FET",
+    "intended_market_segment": "professional_studio"
   },
-  "country_of_origin": "Russia",
-  "release_status": "Production model"
+
+  "capsule_system": {
+    "interchangeable": true,
+    "available_polar_patterns": [
+      "cardioid"
+    ]
+  },
+
+  "frequency_response": {
+    "data_type": "relative_frequency_response",
+    "variants": [
+      "cardioid"
+    ],
+    "format": [
+      "csv",
+      "png"
+    ],
+    "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "acoustic_guitar",
+      "drum_overheads",
+      "spot_miking"
+    ],
+    "recording_distance_typical": "close_to_medium",
+    "environment_assumptions": [
+      "studio",
+      "controlled_acoustic_space"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "defined",
+      "focused",
+      "fast_transients"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "requires_phantom_power": true,
+    "recommended_preamp_quality": "professional",
+    "sensitivity_to_room_reflections": "moderate_to_high",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

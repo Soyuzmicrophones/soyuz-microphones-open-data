@@ -1,31 +1,76 @@
 {
   "manufacturer": "SOYUZ Microphones",
-  "series": "013",
   "model": "013 Ambisonic",
-  "microphone_type": "Spatial microphone system (Ambisonic)",
-  "transducer_type": "Condenser",
-  "electronics": "FET",
-  "array_configuration": {
+
+  "classification": {
+    "microphone_category": "ambisonic",
+    "transducer_type": "condenser",
+    "electronics_type": "FET",
+    "intended_market_segment": "professional_studio"
+  },
+
+  "capsule_system": {
+    "interchangeable": false,
+    "available_polar_patterns": [
+      "cardioid"
+    ],
     "capsule_count": 4,
-    "capsules_identical_frequency_response": true,
-    "note": "Frequency response curve provided applies to all four capsules"
+    "capsule_configuration": "identical_capsules"
   },
-  "intended_applications": [
-    "Ambisonic recording",
-    "Immersive audio capture",
-    "Room and ambience recording",
-    "VR/AR audio"
-  ],
+
   "frequency_response": {
-    "data_type": "Relative frequency response",
-    "applies_to": "All capsules (identical FR)",
-    "format": "CSV and PNG",
-    "note": "Provided for comparative reference"
+    "data_type": "relative_frequency_response",
+    "variants": [
+      "single_capsule_reference"
+    ],
+    "format": [
+      "csv",
+      "png"
+    ],
+    "disclaimer": "Frequency response data represents a single capsule; all capsules share identical frequency characteristics."
   },
-  "related_models": {
-    "same_series": ["013 FET", "013 TUBE"],
-    "difference_note": "Multi-capsule spatial microphone system intended for ambisonic/immersive recording"
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "ambisonic_recording",
+      "spatial_audio",
+      "immersive_audio",
+      "field_recording",
+      "room_capture"
+    ],
+    "recording_distance_typical": "room",
+    "environment_assumptions": [
+      "studio",
+      "controlled_acoustic_space",
+      "field_environment"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
   },
-  "country_of_origin": "Russia",
-  "release_status": "Production model"
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "spatial_accuracy",
+      "consistent_capsules",
+      "precise_imaging",
+      "natural_room_capture"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "requires_phantom_power": true,
+    "recommended_preamp_quality": "professional",
+    "sensitivity_to_room_reflections": "high",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

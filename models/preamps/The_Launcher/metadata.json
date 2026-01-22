@@ -1,15 +1,66 @@
 {
   "manufacturer": "SOYUZ Microphones",
-  "product_name": "The Launcher",
-  "product_type": "Inline microphone preamp",
-  "category": "Preamp",
-  "signal_domain": "Microphone level",
-  "power_requirements": [
-    "48V phantom power"
-  ],
-  "intended_applications": [
-    "Dynamic microphones",
-    "Ribbon microphones",
-    "Low-output microphone gain staging"
-  ]
+  "model": "The Launcher",
+
+  "classification": {
+    "product_category": "microphone_preamplifier",
+    "device_type": "inline_mic_preamp",
+    "topology": "transformer_colored",
+    "intended_market_segment": "professional_studio"
+  },
+
+  "gain": {
+    "fixed_gain_db": 26,
+    "disclaimer": "Fixed gain value as specified by the manufacturer."
+  },
+
+  "phantom_power": {
+    "required_for_device_operation": true,
+    "passed_to_microphone": false,
+    "disclaimer": "Phantom power is required to operate the device and is not passed through to the connected microphone."
+  },
+
+  "connectivity": {
+    "input_type": [
+      "XLR_mic_in"
+    ],
+    "output_type": [
+      "XLR_mic_out"
+    ],
+    "di_functionality": false
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "add_gain_to_dynamic_mics",
+      "add_gain_to_ribbon_mics",
+      "low_output_microphone_support",
+      "signal_chain_gain_staging"
+    ],
+    "environment_assumptions": [
+      "studio",
+      "live_sound"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "transformer_character",
+      "harmonic_enrichment",
+      "enhanced_presence",
+      "low_noise_gain"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

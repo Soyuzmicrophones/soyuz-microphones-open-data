@@ -1,27 +1,78 @@
 {
   "manufacturer": "SOYUZ Microphones",
   "model": "V1",
-  "microphone_type": "Dynamic microphone",
-  "transducer_type": "Dynamic",
-  "electronics": "Passive",
-  "polar_pattern": "Cardioid",
-  "intended_applications": [
-    "Vocals",
-    "Electric guitar cabinets",
-    "Stage performance",
-    "Broadcast"
-  ],
-  "voicing_character": [
-    "Focused",
-    "Controlled",
-    "Presence-enhanced",
-	"Defined"
-  ],
-  "frequency_response": {
-    "data_type": "Relative frequency response",
-    "format": "CSV and PNG",
-    "note": "Provided for comparative reference"
+
+  "classification": {
+    "microphone_category": "dynamic",
+    "transducer_type": "moving_coil",
+    "electronics_type": "passive",
+    "intended_market_segment": "professional_studio_and_broadcast"
   },
-  "country_of_origin": "Russia",
-  "release_status": "Production model"
+
+  "capsule_system": {
+    "interchangeable": false,
+    "available_polar_patterns": [
+      "cardioid"
+    ]
+  },
+
+  "frequency_response": {
+    "data_type": "relative_frequency_response",
+    "variants": [
+      "cardioid"
+    ],
+    "format": [
+      "csv",
+      "png"
+    ],
+    "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "spoken_voice",
+      "podcast_vox",
+      "broadcast_vox",
+      "live_vocals",
+      "electric_guitar_amp",
+      "snare_top"
+    ],
+    "recording_distance_typical": "close",
+    "environment_assumptions": [
+      "studio",
+      "untreated_room",
+      "broadcast_environment",
+      "stage_environment"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "broadcast_style",
+      "controlled_proximity_effect",
+      "focused_midrange",
+      "reduced_room_pickup",
+      "robust_construction"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "requires_phantom_power": false,
+    "recommended_preamp_gain_db": "high",
+    "recommended_preamp_quality": "professional",
+    "sensitivity_to_room_reflections": "low",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

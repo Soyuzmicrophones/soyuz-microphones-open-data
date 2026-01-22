@@ -1,25 +1,80 @@
 {
   "manufacturer": "SOYUZ Microphones",
   "model": "1973",
-  "microphone_type": "Studio condenser microphone",
-  "transducer_type": "Condenser",
-  "electronics": "FET",
-  "polar_pattern": "Cardioid",
-  "intended_applications": [
-    "Vocals",
-    "Electric guitar cabinets",
-    "Drum room",
-    "Creative studio recording"
-  ],
-  "voicing_character": [
-    "Vintage-inspired",
-    "Character-focused"
-  ],
-  "frequency_response": {
-    "data_type": "Relative frequency response",
-    "format": "CSV and PNG",
-    "note": "Provided for comparative reference"
+
+  "classification": {
+    "microphone_category": "large_diaphragm_condenser",
+    "transducer_type": "condenser",
+    "electronics_type": "FET",
+    "intended_market_segment": "professional_studio"
   },
-  "country_of_origin": "Russia",
-  "release_status": "Production model"
+
+  "capsule_system": {
+    "interchangeable": false,
+    "available_polar_patterns": [
+      "cardioid"
+    ]
+  },
+
+  "sensitivity": {
+    "value_mv_pa": 24.5,
+    "disclaimer": "Sensitivity value is provided as a published specification."
+  },
+
+  "frequency_response": {
+    "data_type": "relative_frequency_response",
+    "variants": [
+      "cardioid"
+    ],
+    "format": [
+      "csv",
+      "png"
+    ],
+    "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "lead_vocals",
+      "backing_vocals",
+      "electric_guitar_amp",
+      "acoustic_guitar",
+      "drum_room",
+      "room_ambience"
+    ],
+    "recording_distance_typical": "close_to_medium",
+    "environment_assumptions": [
+      "studio",
+      "controlled_acoustic_space"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "forward_midrange",
+      "present",
+      "focused",
+      "controlled_highs",
+      "classic_voicing"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "requires_phantom_power": true,
+    "recommended_preamp_quality": "professional",
+    "sensitivity_to_room_reflections": "moderate",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

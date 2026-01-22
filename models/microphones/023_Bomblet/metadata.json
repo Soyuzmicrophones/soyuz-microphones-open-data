@@ -1,22 +1,80 @@
 {
   "manufacturer": "SOYUZ Microphones",
   "model": "023 Bomblet",
-  "series": "023",
-  "microphone_type": "Small-diaphragm condenser microphone",
-  "transducer_type": "Condenser",
-  "electronics": "FET",
-  "polar_pattern": "Cardioid",
-  "intended_applications": [
-    "Drum overheads",
-    "Acoustic instruments",
-    "Percussion",
-    "Bass drum"
-  ],
-  "frequency_response": {
-    "data_available": true,
-    "format": "CSV",
-    "description": "Relative frequency response"
+
+  "classification": {
+    "microphone_category": "small_diaphragm_condenser",
+    "transducer_type": "condenser",
+    "electronics_type": "FET",
+    "intended_market_segment": "professional_studio"
   },
-  "country_of_origin": "Russia",
-  "release_status": "In production"
+
+  "capsule_system": {
+    "interchangeable": true,
+    "available_polar_patterns": [
+      "cardioid"
+    ]
+  },
+
+  "sensitivity": {
+    "value_mv_pa": 25,
+    "disclaimer": "Sensitivity value is provided as a published specification."
+  },
+
+  "frequency_response": {
+    "data_type": "relative_frequency_response",
+    "variants": [
+      "cardioid"
+    ],
+    "format": [
+      "csv",
+      "png"
+    ],
+    "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "vocals",
+	  "acoustic_guitar",
+      "percussion",
+      "drum_overheads",
+      "snare_top",
+	  "bass_drum",
+      "electric_guitar_amp"
+    ],
+    "recording_distance_typical": "close",
+    "environment_assumptions": [
+      "studio",
+      "controlled_acoustic_space",
+      "stage_environment"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "balanced",
+	  "rich_low_end",
+      "smooth_highs"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "requires_phantom_power": true,
+    "recommended_preamp_quality": "professional",
+    "sensitivity_to_room_reflections": "low_to_moderate",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

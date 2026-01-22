@@ -1,38 +1,75 @@
 {
   "manufacturer": "SOYUZ Microphones",
   "model": "013 FET",
-  "microphone_type": "Small-diaphragm condenser microphone system",
-  "transducer_type": "Condenser",
-  "electronics": "FET",
+
+  "classification": {
+    "microphone_category": "small_diaphragm_condenser",
+    "transducer_type": "condenser",
+    "electronics_type": "FET",
+    "intended_market_segment": "professional_studio"
+  },
+
   "capsule_system": {
     "interchangeable": true,
     "available_polar_patterns": [
-      "Cardioid",
-      "Hypercardioid",
-      "Omnidirectional"
+      "cardioid",
+      "hypercardioid",
+      "omnidirectional"
     ]
   },
-  "intended_applications": [
-    "Acoustic instruments",
-    "Drum overheads",
-    "Percussion",
-    "Stereo recording"
-  ],
-  "voicing_character": [
-    "Detailed",
-    "Natural",
-    "Precision-focused"
-  ],
+
   "frequency_response": {
-    "data_type": "Relative frequency response",
+    "data_type": "relative_frequency_response",
     "variants": [
-      "Cardioid",
-      "Hypercardioid",
-      "Omnidirectional"
+      "cardioid",
+      "hypercardioid",
+      "omnidirectional"
     ],
-    "format": "CSV and PNG",
-    "note": "Provided for comparative reference"
+    "format": [
+      "csv",
+      "png"
+    ],
+    "disclaimer": "Provided as relative reference data; not a performance ranking."
   },
-  "country_of_origin": "Russia",
-  "release_status": "Production model"
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "acoustic_instruments",
+      "drum_overheads",
+      "percussion",
+      "stereo_recording"
+    ],
+    "recording_distance_typical": "close_to_medium",
+    "environment_assumptions": [
+      "studio",
+      "controlled_acoustic_space"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "detailed",
+      "natural",
+      "precision_focused"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "requires_phantom_power": true,
+    "recommended_preamp_quality": "professional",
+    "sensitivity_to_room_reflections": "moderate_to_high",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }

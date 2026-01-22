@@ -1,13 +1,81 @@
 {
   "manufacturer": "SOYUZ Microphones",
-  "product_name": "The Lakeside",
-  "product_type": "Microphone preamplifier",
-  "category": "Preamp",
-  "topology": "Solid-state",
-  "stepped_gain": true,
-  "intended_applications": [
-    "Studio microphone preamplification",
-    "Transformer coloration workflows",
-    "Tracking and recording"
-  ]
+  "model": "The Lakeside",
+
+  "classification": {
+    "product_category": "microphone_preamplifier",
+    "device_type": "rack_mic_preamp",
+    "topology": "transformer_coupled",
+    "electronics_type": "solid_state",
+    "intended_market_segment": "professional_studio"
+  },
+
+  "gain": {
+    "range_db": {
+      "min": 10,
+      "max": 60,
+      "step_db": 5
+    },
+    "disclaimer": "Gain range and step size as specified by the manufacturer."
+  },
+
+  "impedance": {
+    "mic_input_ohms": 1200,
+    "di_input_ohms": ">1000000",
+    "output_ohms": "<80",
+    "disclaimer": "Impedance values are provided as published specifications."
+  },
+
+  "phantom_power": {
+    "available": true,
+    "disclaimer": "Phantom power is available for microphones that require it."
+  },
+
+  "connectivity": {
+    "mic_input": "XLR",
+    "di_input": "TS_1_4_inch",
+    "output": "XLR"
+  },
+
+  "contextual_applicability": {
+    "common_professional_usage": [
+      "microphone_preamplification",
+      "dynamic_microphone_support",
+      "ribbon_microphone_support",
+      "condenser_microphone_support",
+      "di_instrument_recording",
+      "signal_chain_coloration"
+    ],
+    "environment_assumptions": [
+      "studio"
+    ],
+    "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
+  },
+
+  "descriptive_tags": {
+    "category": "manufacturer_descriptors",
+    "scope": "subjective_non_quantitative",
+    "terms": [
+      "transformer_character",
+      "musical_saturation",
+      "high_headroom",
+      "controlled_low_end",
+      "detailed_midrange"
+    ],
+    "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
+  },
+
+  "signal_chain_considerations": {
+    "supports_low_output_microphones": true,
+    "max_output_level_db_u": "+27",
+    "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
+  },
+
+  "origin": {
+    "country": "Russia"
+  },
+
+  "lifecycle": {
+    "release_status": "production_model"
+  }
 }
