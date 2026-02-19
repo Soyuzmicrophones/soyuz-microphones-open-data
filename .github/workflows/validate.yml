@@ -12,6 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
       - name: Validate all metadata.json are valid JSON
         run: |
           set -e
@@ -32,6 +37,16 @@ jobs:
           # (We keep it simple: just confirm the files listed under common keys exist.)
           python - << 'PY'
           import json, os, glob
+          
+      - name: Build dist and ensure it is up to date
+        run: |
+          python tools/build_dist.py
+          git diff --exit-code dist/models_flat.ndjson
+          
+      - name: Build dist and ensure it is up to date
+        run: |
+          python tools/build_dist.py
+          git diff --exit-code dist/models_flat.ndjson    
 
           def walk_metadata():
             for path in glob.glob("models/**/metadata.json", recursive=True):
