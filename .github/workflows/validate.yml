@@ -4,6 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
 
 jobs:
   validate:
@@ -26,6 +27,7 @@ jobs:
 
       - name: Validate index.json is valid JSON (if present)
         run: |
+          set -e
           if [ -f models/index.json ]; then
             python -m json.tool models/index.json >/dev/null
           fi
@@ -33,50 +35,46 @@ jobs:
       - name: Check referenced files exist (basic)
         run: |
           set -e
-          # naive check: ensure directories contain referenced CSV/PNG mentioned in metadata
-          # (We keep it simple: just confirm the files listed under common keys exist.)
           python - << 'PY'
           import json, os, glob
-          
-      - name: Build dist and ensure it is up to date
-        run: |
-          python tools/build_dist.py
-          git diff --exit-code dist/models_flat.ndjson
-          
-      - name: Build dist and ensure it is up to date
-        run: |
-          python tools/build_dist.py
-          git diff --exit-code dist/models_flat.ndjson    
 
           def walk_metadata():
-            for path in glob.glob("models/**/metadata.json", recursive=True):
-              with open(path, "r", encoding="utf-8") as f:
-                yield path, json.load(f)
+              for path in glob.glob("models/**/metadata.json", recursive=True):
+                  with open(path, "r", encoding="utf-8") as f:
+                      yield path, json.load(f)
 
           def check_file(base_dir, rel):
-            if not rel:
-              return
-            # allow absolute URLs; only check local relative paths
-            if isinstance(rel, str) and (rel.startswith("http://") or rel.startswith("https://")):
-              return
-            p = os.path.normpath(os.path.join(base_dir, rel))
-            if not os.path.exists(p):
-              raise SystemExit(f"Missing referenced file: {p}")
+              if not rel:
+                  return
+              # allow absolute URLs; only check local relative paths
+              if isinstance(rel, str) and (rel.startswith("http://") or rel.startswith("https://")):
+                  return
+              p = os.path.normpath(os.path.join(base_dir, rel))
+              if not os.path.exists(p):
+                  raise SystemExit(f"Missing referenced file: {p}")
 
-          # keys that commonly point to assets; adapt to your schema keys
           asset_keys = [
-            ("measurements", "frequency_response_csv"),
-            ("measurements", "polar_pattern_png"),
-            ("measurements", "polar_pattern_csv"),
+              ("measurements", "frequency_response_csv"),
+              ("measurements", "polar_pattern_png"),
+              ("measurements", "polar_pattern_csv"),
           ]
 
           for meta_path, meta in walk_metadata():
-            base_dir = os.path.dirname(meta_path)
-            # deep-ish scan for known keys
-            cur = meta
-            for a,b in asset_keys:
-              if isinstance(cur, dict) and a in cur and isinstance(cur[a], dict) and b in cur[a]:
-                check_file(base_dir, cur[a][b])
+              base_dir = os.path.dirname(meta_path)
+              for a, b in asset_keys:
+                  if isinstance(meta, dict) and a in meta and isinstance(meta[a], dict) and b in meta[a]:
+                      check_file(base_dir, meta[a][b])
 
           print("OK: referenced files check passed (basic)")
           PY
+
+      - name: Run repo validation script
+        run: |
+          set -e
+          python tools/validate_repo.py
+
+      - name: Build dist and ensure it is up to date
+        run: |
+          set -e
+          python tools/build_dist.py
+          git diff --exit-code dist/models_flat.ndjson
