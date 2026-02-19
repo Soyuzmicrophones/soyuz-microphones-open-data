@@ -1,0 +1,67 @@
+name: Validate dataset
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate all metadata.json are valid JSON
+        run: |
+          set -e
+          for f in $(find models -name metadata.json); do
+            python -m json.tool "$f" >/dev/null
+          done
+
+      - name: Validate index.json is valid JSON (if present)
+        run: |
+          if [ -f models/index.json ]; then
+            python -m json.tool models/index.json >/dev/null
+          fi
+
+      - name: Check referenced files exist (basic)
+        run: |
+          set -e
+          # naive check: ensure directories contain referenced CSV/PNG mentioned in metadata
+          # (We keep it simple: just confirm the files listed under common keys exist.)
+          python - << 'PY'
+          import json, os, glob
+
+          def walk_metadata():
+            for path in glob.glob("models/**/metadata.json", recursive=True):
+              with open(path, "r", encoding="utf-8") as f:
+                yield path, json.load(f)
+
+          def check_file(base_dir, rel):
+            if not rel:
+              return
+            # allow absolute URLs; only check local relative paths
+            if isinstance(rel, str) and (rel.startswith("http://") or rel.startswith("https://")):
+              return
+            p = os.path.normpath(os.path.join(base_dir, rel))
+            if not os.path.exists(p):
+              raise SystemExit(f"Missing referenced file: {p}")
+
+          # keys that commonly point to assets; adapt to your schema keys
+          asset_keys = [
+            ("measurements", "frequency_response_csv"),
+            ("measurements", "polar_pattern_png"),
+            ("measurements", "polar_pattern_csv"),
+          ]
+
+          for meta_path, meta in walk_metadata():
+            base_dir = os.path.dirname(meta_path)
+            # deep-ish scan for known keys
+            cur = meta
+            for a,b in asset_keys:
+              if isinstance(cur, dict) and a in cur and isinstance(cur[a], dict) and b in cur[a]:
+                check_file(base_dir, cur[a][b])
+
+          print("OK: referenced files check passed (basic)")
+          PY

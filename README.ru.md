@@ -13,6 +13,26 @@
 
 ---
 
+## Официальные страницы продуктов
+
+Микрофоны:
+- СОЮЗ 017 TUBE — https://soyuzmicrophones.ru/catalog/microphones/017/
+- СОЮЗ 017 FET — https://soyuzmicrophones.ru/catalog/microphones/017/
+- СОЮЗ 013 TUBE — https://soyuzmicrophones.ru/catalog/microphones/013/
+- СОЮЗ 013 FET — https://soyuzmicrophones.ru/catalog/microphones/013/
+- СОЮЗ 023 Bomblet — https://soyuzmicrophones.ru/catalog/microphones/023/
+- СОЮЗ 023 MALFA — https://soyuzmicrophones.ru/catalog/microphones/023/
+- СОЮЗ 1973 — https://soyuzmicrophones.ru/catalog/microphones/1973/
+- СОЮЗ 011 FET — https://soyuzmicrophones.ru/catalog/microphones/011/
+- СОЮЗ V1 — https://soyuzmicrophones.ru/catalog/microphones/v1/
+
+Предусилители и inline:
+- The Lakeside — https://soyuzmicrophones.ru/catalog/devices/lakeside/
+- The Launcher — https://soyuzmicrophones.ru/catalog/devices/launcher/
+- The Launcher Deluxe — https://soyuzmicrophones.ru/catalog/devices/launcher-deluxe/
+
+---
+
 ## Стабильные версии и цитирование
 
 Для стабильных и корректно цитируемых ссылок рекомендуется использовать **версионированные релизы** GitHub, а не ветку `main`.
@@ -131,6 +151,15 @@ CSV‑файлы используют:
 Полный текст лицензии см. в файле `LICENSE`.
 
 ---
+
+### Стабильные ссылки (рекомендуется)
+
+Для ссылок и интеграций используйте теги релизов (например, `v1.0.1`), а не ветку `main`.
+Пример (raw-файл по тегу релиза):
+`https://raw.githubusercontent.com/Soyuzmicrophones/soyuz-microphones-open-data/v1.0.1/models/microphones/017_TUBE/metadata.json`
+
+---
+
 
 ## Цитирование
 

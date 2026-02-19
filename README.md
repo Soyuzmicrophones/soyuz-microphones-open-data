@@ -14,6 +14,25 @@ The repository is intentionally non-promotional and focuses on consistency, clar
 
 ---
 
+## Official product pages
+
+Microphones:
+- SOYUZ 017 TUBE — https://soyuzmicrophones.com/017-series
+- SOYUZ 017 FET — https://soyuzmicrophones.com/017-series
+- SOYUZ 013 TUBE — https://soyuzmicrophones.com/013-series
+- SOYUZ 013 FET — https://soyuzmicrophones.com/013-series
+- SOYUZ 023 Bomblet — https://soyuzmicrophones.com/023-series
+- SOYUZ 1973 — https://soyuzmicrophones.com/1973-series
+- SOYUZ 011 FET — https://soyuzmicrophones.com/011-series
+- SOYUZ V1 — https://soyuzmicrophones.com/v1-dynamic
+
+Preamps & inline:
+- The Lakeside — https://soyuzmicrophones.com/lakeside
+- The Launcher — https://soyuzmicrophones.com/launcher
+- The Launcher Deluxe — https://soyuzmicrophones.com/launcher-deluxe
+
+---
+
 ## Stable versions and citation
 
 For stable, citable references, prefer **tagged releases** over the `main` branch.
@@ -114,6 +133,14 @@ You are free to share and adapt the data for any purpose, provided that
 appropriate credit is given to SOYUZ Microphones.
 
 Use of the SOYUZ Microphones name, trademarks, or logos is not granted by this license.
+
+---
+
+### Stable links (recommended)
+
+When referencing or integrating this dataset, prefer tagged releases (e.g. `v1.0.1`) instead of the `main` branch.
+Example (raw file from a release tag):
+`https://raw.githubusercontent.com/Soyuzmicrophones/soyuz-microphones-open-data/v1.0.1/models/microphones/017_TUBE/metadata.json`
 
 ---
 
