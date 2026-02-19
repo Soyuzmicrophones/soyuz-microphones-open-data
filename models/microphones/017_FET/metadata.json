@@ -16,6 +16,15 @@
     ]
   },
 
+  "design_and_components": {
+    "capsule": {
+      "model": "S17",
+      "diaphragm_diameter_mm": 34,
+      "diaphragm_coating": "gold_sputtered"
+    },
+    "disclaimer": "Design and component information is provided as published product information."
+  },
+
   "sensitivity": {
     "value_mv_pa": 38,
     "disclaimer": "Sensitivity value is provided as a published specification."
@@ -30,7 +39,30 @@
       "csv",
       "png"
     ],
+    "published_frequency_range_hz": {
+      "min": 20,
+      "max": 20000
+    },
     "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "electrical_specifications": {
+    "output_impedance_ohm": 200,
+    "self_noise_dba": 18,
+    "max_spl_db": 140,
+    "powering": {
+      "phantom_power": "48V"
+    },
+    "disclaimer": "Electrical specifications are provided as published specifications."
+  },
+
+  "physical_specifications": {
+    "dimensions_mm": {
+      "length": 226,
+      "diameter": 55
+    },
+    "weight_g": 930,
+    "disclaimer": "Physical specifications are provided as published specifications."
   },
 
   "contextual_applicability": {
@@ -63,7 +95,7 @@
   },
 
   "signal_chain_considerations": {
-    "requires_phantom_power": true,
+    "requires_phantom_power": "48V",
     "recommended_preamp_quality": "professional",
     "sensitivity_to_room_reflections": "moderate_to_high",
     "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."

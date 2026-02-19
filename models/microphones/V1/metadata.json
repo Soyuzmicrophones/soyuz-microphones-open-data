@@ -16,6 +16,15 @@
     ]
   },
 
+  "design_and_components": {
+    "disclaimer": "Design and component information is provided as published product information."
+  },
+
+  "sensitivity": {
+    "value_mv_pa": 1.5,
+    "disclaimer": "Sensitivity value is provided as a published specification."
+  },
+
   "frequency_response": {
     "data_type": "relative_frequency_response",
     "variants": [
@@ -25,7 +34,21 @@
       "csv",
       "png"
     ],
+    "published_frequency_range_hz": {
+      "min": 50,
+      "max": 15000
+    },
     "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "physical_specifications": {
+    "dimensions_mm": {
+      "length": 172,
+      "width": 38.5,
+      "height": 25
+    },
+    "weight_g": 280,
+    "disclaimer": "Physical specifications are provided as published specifications."
   },
 
   "contextual_applicability": {
@@ -76,3 +99,9 @@
     "release_status": "production_model"
   }
 }
+
+
+
+
+
+

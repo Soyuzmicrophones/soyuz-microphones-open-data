@@ -16,6 +16,15 @@
     ]
   },
 
+  "design_and_components": {
+    "capsule": {
+      "model": "S23",
+      "diaphragm_diameter_mm": 33,
+      "diaphragm_coating": "gold_sputtered"
+    },
+    "disclaimer": "Design and component information is provided as published product information."
+  },
+
   "sensitivity": {
     "value_mv_pa": 25,
     "disclaimer": "Sensitivity value is provided as a published specification."
@@ -30,17 +39,42 @@
       "csv",
       "png"
     ],
+    "published_frequency_range_hz": {
+      "min": 20,
+      "max": 20000
+    },
     "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "electrical_specifications": {
+    "output_impedance_ohm": 190,
+    "self_noise_dba": 18,
+    "max_spl_db": 140,
+    "powering": {
+      "requires_external_power_supply": false,
+      "external_power_supply_model": null,
+      "phantom_power": "48V"
+    },
+    "disclaimer": "Electrical specifications are provided as published specifications."
+  },
+
+  "physical_specifications": {
+    "dimensions_mm": {
+      "length": 187,
+      "diameter": 47
+    },
+    "weight_g": 475,
+    "disclaimer": "Physical specifications are provided as published specifications."
   },
 
   "contextual_applicability": {
     "common_professional_usage": [
       "vocals",
-	  "acoustic_guitar",
+      "acoustic_guitar",
       "percussion",
       "drum_overheads",
       "snare_top",
-	  "bass_drum",
+      "bass_drum",
       "electric_guitar_amp"
     ],
     "recording_distance_typical": "close",
@@ -57,7 +91,7 @@
     "scope": "subjective_non_quantitative",
     "terms": [
       "balanced",
-	  "rich_low_end",
+      "rich_low_end",
       "smooth_highs"
     ],
     "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."

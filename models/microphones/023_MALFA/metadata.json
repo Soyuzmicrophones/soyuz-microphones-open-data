@@ -9,17 +9,20 @@
     "intended_market_segment": "professional_studio"
   },
 
-  "variant_relationship": {
-    "base_model": "023 Bomblet",
-    "variant_type": "capsule_adjustment_variant",
-    "disclaimer": "This model shares the same physical form factor and mounting as the base model; differences relate to adjustment of the capsule."
-  },
-
   "capsule_system": {
     "interchangeable": true,
     "available_polar_patterns": [
       "cardioid"
     ]
+  },
+
+  "design_and_components": {
+    "capsule": {
+      "model": "S23",
+      "diaphragm_diameter_mm": 33,
+      "diaphragm_coating": "gold_sputtered"
+    },
+    "disclaimer": "Design and component information is provided as published product information."
   },
 
   "sensitivity": {
@@ -36,22 +39,49 @@
       "csv",
       "png"
     ],
+    "published_frequency_range_hz": {
+      "min": 20,
+      "max": 20000
+    },
     "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "electrical_specifications": {
+    "output_impedance_ohm": 190,
+    "self_noise_dba": 18,
+    "max_spl_db": 140,
+    "powering": {
+      "requires_external_power_supply": false,
+      "external_power_supply_model": null,
+      "phantom_power": "48V"
+    },
+    "disclaimer": "Electrical specifications are provided as published specifications."
+  },
+
+  "physical_specifications": {
+    "dimensions_mm": {
+      "length": 187,
+      "diameter": 47
+    },
+    "weight_g": 475,
+    "disclaimer": "Physical specifications are provided as published specifications."
   },
 
   "contextual_applicability": {
     "common_professional_usage": [
       "vocals",
-	  "acoustic_guitar",
+      "acoustic_guitar",
       "percussion",
       "drum_overheads",
+      "snare_top",
       "bass_drum",
-      "ensemble_recording"
+      "electric_guitar_amp"
     ],
-    "recording_distance_typical": "close_to_medium",
+    "recording_distance_typical": "close",
     "environment_assumptions": [
       "studio",
-      "controlled_acoustic_space"
+      "controlled_acoustic_space",
+      "stage_environment"
     ],
     "disclaimer": "Usage tags describe commonly observed professional contexts and do not constitute usage recommendations."
   },
@@ -61,7 +91,7 @@
     "scope": "subjective_non_quantitative",
     "terms": [
       "balanced",
-      "natural",
+      "rich_low_end",
       "smooth_highs"
     ],
     "disclaimer": "Descriptive terms reflect qualitative descriptors commonly used in professional contexts and are not direct measurement results."
@@ -70,7 +100,7 @@
   "signal_chain_considerations": {
     "requires_phantom_power": true,
     "recommended_preamp_quality": "professional",
-    "sensitivity_to_room_reflections": "moderate",
+    "sensitivity_to_room_reflections": "low_to_moderate",
     "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
   },
 

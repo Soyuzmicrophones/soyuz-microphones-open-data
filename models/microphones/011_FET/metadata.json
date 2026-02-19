@@ -16,6 +16,19 @@
     ]
   },
 
+  "design_and_components": {
+    "capsule": {
+      "diaphragm_diameter_mm": 18,
+      "diaphragm_coating": "gold_sputtered"
+    },
+    "disclaimer": "Design and component information is provided as published product information."
+  },
+
+  "sensitivity": {
+    "value_mv_pa": 19,
+    "disclaimer": "Sensitivity value is provided as a published specification."
+  },
+
   "frequency_response": {
     "data_type": "relative_frequency_response",
     "variants": [
@@ -25,7 +38,32 @@
       "csv",
       "png"
     ],
+    "published_frequency_range_hz": {
+      "min": 20,
+      "max": 20000
+    },
     "disclaimer": "Provided as relative reference data; not a performance ranking."
+  },
+
+  "electrical_specifications": {
+    "output_impedance_ohm": 150,
+    "self_noise_dba": 16,
+    "max_spl_db": 130,
+    "powering": {
+      "requires_external_power_supply": false,
+      "external_power_supply_model": null,
+      "phantom_power": "48V"
+    },
+    "disclaimer": "Electrical specifications are provided as published specifications."
+  },
+
+  "physical_specifications": {
+    "dimensions_mm": {
+      "length": 120,
+      "diameter": 18
+    },
+    "weight_g": 200,
+    "disclaimer": "Physical specifications are provided as published specifications."
   },
 
   "contextual_applicability": {
