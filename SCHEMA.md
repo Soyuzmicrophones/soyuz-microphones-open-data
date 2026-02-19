@@ -175,3 +175,27 @@ When parsing, treat the repository’s CSV dialect as part of the dataset defini
 - Fixes/typos/docs-only adjustments: **PATCH** release
 - Any breaking changes to field names/types or directory layout: **MAJOR** release
 
+---
+
+## Optional published specifications fields (non-breaking)
+
+Some models include additional published specification blocks. These fields are optional and may be absent for certain models.
+
+- `frequency_response.published_frequency_range_hz`:
+  - `{ "min": <int>, "max": <int> }` (Hz)
+- `electrical_specifications`:
+  - `output_impedance_ohm` (int)
+  - `self_noise_dba` (number, A-weighted)
+  - `max_spl_db` (number)
+  - `powering.phantom_power` (string, e.g. `"48V"` or `"not_applicable"`)
+- `physical_specifications`:
+  - `dimensions_mm.length` (int)
+  - `dimensions_mm.diameter` (int)
+  - `weight_g` (int)
+- `design_and_components`:
+  - `capsule.model` (string)
+  - `capsule.diaphragm_diameter_mm` (int)
+  - `capsule.diaphragm_coating` (string)
+  - `tube_type` (string, when applicable)
+
+These values are provided as published specifications and are not intended as performance rankings.
