@@ -6,7 +6,7 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 
 ## [Unreleased]
 ### Added
-- (Add upcoming changes here)
+- Structured metadata and index entries for the SOYUZ Silver 17 microphone.
 
 ### Changed
 - (Add upcoming changes here)

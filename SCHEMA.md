@@ -60,11 +60,12 @@ Not every product uses every object; presence depends on product category and ap
   - `available_polar_patterns` (array of strings) — patterns supported by the model or included in the dataset
   - optional, model-specific keys (e.g., ambisonic capsule counts / configuration)
 
-- `frequency_response` (object) *(when FR data exists)*
+- `frequency_response` (object) *(when FR data or a published frequency range exists)*
   - `data_type` (string) — typically `"relative_frequency_response"`
   - `variants` (array of strings) — names aligned with polar pattern variants (e.g., `cardioid`, `omnidirectional`)
   - `format` (array of strings) — typically `["csv","png"]`
   - `disclaimer` (string) — must clearly state the comparative/relative nature of FR data
+  - `measurement_data_included` (boolean, optional) — set to `false` when only a published frequency range is available and no CSV/PNG measurement data is included
 
 - `sensitivity` (object) *(when published sensitivity is included)*
   - `value_mv_pa` (number)
@@ -186,6 +187,7 @@ Some models include additional published specification blocks. These fields are 
 - `electrical_specifications`:
   - `output_impedance_ohm` (int)
   - `self_noise_dba` (number, A-weighted)
+  - `dynamic_range_db` (number)
   - `max_spl_db` (number)
   - `powering.phantom_power` (string, e.g. `"48V"` or `"not_applicable"`)
 - `physical_specifications`:
@@ -194,6 +196,7 @@ Some models include additional published specification blocks. These fields are 
   - `weight_g` (int)
 - `design_and_components`:
   - `capsule.model` (string)
+  - `capsule.termination` (string, when published)
   - `capsule.diaphragm_diameter_mm` (int)
   - `capsule.diaphragm_coating` (string)
   - `tube_type` (string, when applicable)

@@ -17,6 +17,7 @@ The repository is intentionally non-promotional and focuses on consistency, clar
 ## Official product pages
 
 Microphones:
+- SOYUZ Silver 17 — https://soyuzmicrophones.com/silver17
 - SOYUZ 017 TUBE — https://soyuzmicrophones.com/017-series
 - SOYUZ 017 FET — https://soyuzmicrophones.com/017-series
 - SOYUZ 013 TUBE — https://soyuzmicrophones.com/013-series
@@ -52,6 +53,7 @@ models/
 ├── index.json
 │
 ├── microphones/
+│   ├── Silver_17/
 │   ├── 017_TUBE/
 │   ├── 017_FET/
 │   ├── 1973/

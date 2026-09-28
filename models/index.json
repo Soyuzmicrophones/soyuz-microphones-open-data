@@ -5,6 +5,13 @@
   "product_categories": {
     "microphones": [
       {
+        "id": "Silver_17",
+        "name": "Silver 17",
+        "type": "Condenser microphone",
+        "class": "LDC",
+        "electronics": "Tube"
+      },
+      {
         "id": "017_TUBE",
         "name": "017 TUBE",
         "type": "Condenser microphone",

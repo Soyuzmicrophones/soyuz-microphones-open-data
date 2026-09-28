@@ -16,6 +16,7 @@
 ## Официальные страницы продуктов
 
 Микрофоны:
+- СОЮЗ Silver 17 — https://soyuzmicrophones.com/ru/silver17
 - СОЮЗ 017 TUBE — https://soyuzmicrophones.ru/catalog/microphones/017/
 - СОЮЗ 017 FET — https://soyuzmicrophones.ru/catalog/microphones/017/
 - СОЮЗ 013 TUBE — https://soyuzmicrophones.ru/catalog/microphones/013/
