@@ -1,20 +1,17 @@
 {
   "manufacturer": "SOYUZ Microphones",
   "model": "Silver 17",
-
   "classification": {
     "microphone_category": "large_diaphragm_condenser",
     "transducer_type": "condenser",
     "electronics_type": "tube",
     "intended_market_segment": "professional_studio"
   },
-
   "capsule_system": {
     "available_polar_patterns": [
       "cardioid"
     ]
   },
-
   "design_and_components": {
     "capsule": {
       "model": "S17E",
@@ -27,14 +24,17 @@
     "output_transformer": "in_house_wound",
     "disclaimer": "Design and component information is provided as published product information."
   },
-
   "sensitivity": {
     "value_mv_pa": 40,
     "disclaimer": "Sensitivity value is provided as a published specification."
   },
-
   "frequency_response": {
-    "data_type": "relative_frequency_response",
+    "data_type": "digitized_chart_frequency_response",
+    "response_scale": {
+      "unit": "dB",
+      "reference": "as_shown_on_source_chart",
+      "normalized": false
+    },
     "variants": [
       "cardioid"
     ],
@@ -46,9 +46,8 @@
       "min": 20,
       "max": 20000
     },
-    "disclaimer": "CSV values are digitized from the supplied cardioid frequency response chart and are approximate; provided as relative reference data, not a performance ranking."
+    "disclaimer": "CSV values are digitized from the supplied cardioid frequency response chart, preserve the chart's original dB scale, and are approximate; they are not normalized and are not a performance ranking."
   },
-
   "electrical_specifications": {
     "output_impedance_ohm": 270,
     "self_noise_dba": 20,
@@ -72,7 +71,6 @@
     },
     "disclaimer": "Electrical specifications are provided as published specifications."
   },
-
   "physical_specifications": {
     "dimensions_mm": {
       "length": 226,
@@ -81,7 +79,6 @@
     "weight_g": 630,
     "disclaimer": "Physical specifications are provided as published specifications."
   },
-
   "contextual_applicability": {
     "common_professional_usage": [
       "lead_vocals",
@@ -103,7 +100,6 @@
     ],
     "disclaimer": "Usage tags describe manufacturer-published professional contexts and do not constitute usage recommendations."
   },
-
   "descriptive_tags": {
     "category": "manufacturer_descriptors",
     "scope": "subjective_non_quantitative",
@@ -116,18 +112,15 @@
     ],
     "disclaimer": "Descriptive terms reflect qualitative manufacturer descriptors and are not direct measurement results."
   },
-
   "signal_chain_considerations": {
     "requires_external_power_supply": true,
     "requires_phantom_power": "not_applicable",
     "sensitivity_to_room_reflections": "moderate_to_high",
     "disclaimer": "Signal chain considerations are contextual guidance and not measurement results."
   },
-
   "origin": {
     "country": "Russia"
   },
-
   "lifecycle": {
     "release_status": "production_model"
   }

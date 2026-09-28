@@ -19,7 +19,7 @@ This directory contains structured product metadata and relative frequency respo
 
 The supplied chart identifies the polar pattern as cardioid and the measurement environment as an anechoic chamber.
 
-The CSV is a digitized representation of the supplied chart. Values are approximate and limited by the chart resolution and line thickness.
+The CSV is a digitized representation of the supplied chart. Values are approximate and limited by the chart resolution and line thickness. The dB values preserve the original chart scale and are not normalized to 0 dB.
 
 Frequency response data is provided for comparative and illustrative purposes only.
 

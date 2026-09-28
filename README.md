@@ -23,6 +23,7 @@ Microphones:
 - SOYUZ 013 TUBE — https://soyuzmicrophones.com/013-series
 - SOYUZ 013 FET — https://soyuzmicrophones.com/013-series
 - SOYUZ 023 Bomblet — https://soyuzmicrophones.com/023-series
+- SOYUZ 023 MALFA — https://soyuzmicrophones.com/023-series
 - SOYUZ 1973 — https://soyuzmicrophones.com/1973-series
 - SOYUZ 011 FET — https://soyuzmicrophones.com/011-series
 - SOYUZ V1 — https://soyuzmicrophones.com/v1-dynamic
@@ -58,7 +59,7 @@ models/
 │   ├── 017_FET/
 │   ├── 1973/
 │   ├── 023_Bomblet/
-│   ├── 023_Malfa/
+│   ├── 023_MALFA/
 │   ├── 013_FET/
 │   ├── 013_TUBE/
 │   ├── 013_Ambisonic/
@@ -91,7 +92,7 @@ Depending on the model, directories may include:
 Frequency response data is provided for comparative reference only.
 
 Additional notes:
-- For most microphone models, capsules are **detachable / interchangeable** (see per-model metadata)
+- For microphone models with modular capsule systems, capsules are **detachable / interchangeable** (see per-model metadata)
 - Any non-quantitative descriptors are explicitly marked as `subjective_non_quantitative`
 
 ---
@@ -114,12 +115,12 @@ Frequency response charts are not included unless technically meaningful for the
 ## Measurement and data notes
 
 Frequency response data, where provided:
-- represents relative frequency response
+- declares its interpretation in `frequency_response.data_type`
 - is intended for comparative and illustrative purposes
-- is based on a consistent internal measurement procedure
+- may contain relative values or values digitized from a source chart's original dB scale
 - does not disclose proprietary measurement methodology
 
-Curves may be smoothed and averaged.
+Check each model's `frequency_response.response_scale` and disclaimer before comparing values. Curves may be smoothed and averaged.
 
 Data conventions:
 - Where subjective, non-quantitative statements are included, they are tagged as `subjective_non_quantitative`
@@ -140,9 +141,9 @@ Use of the SOYUZ Microphones name, trademarks, or logos is not granted by this l
 
 ### Stable links (recommended)
 
-When referencing or integrating this dataset, prefer tagged releases (e.g. `v1.0.1`) instead of the `main` branch.
+When referencing or integrating this dataset, prefer tagged releases (e.g. `v1.2.0`) instead of the `main` branch.
 Example (raw file from a release tag):
-`https://raw.githubusercontent.com/Soyuzmicrophones/soyuz-microphones-open-data/v1.0.1/models/microphones/017_TUBE/metadata.json`
+`https://raw.githubusercontent.com/Soyuzmicrophones/soyuz-microphones-open-data/v1.2.0/models/microphones/017_TUBE/metadata.json`
 
 ---
 

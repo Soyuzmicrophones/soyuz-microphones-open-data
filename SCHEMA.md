@@ -61,9 +61,10 @@ Not every product uses every object; presence depends on product category and ap
   - optional, model-specific keys (e.g., ambisonic capsule counts / configuration)
 
 - `frequency_response` (object) *(when FR data or a published frequency range exists)*
-  - `data_type` (string) — typically `"relative_frequency_response"`
+  - `data_type` (string) — `"relative_frequency_response"` or `"digitized_chart_frequency_response"`
   - `variants` (array of strings) — names aligned with polar pattern variants (e.g., `cardioid`, `omnidirectional`)
   - `format` (array of strings) — typically `["csv","png"]`
+  - `response_scale` (object, optional) — clarifies `unit`, `reference`, and whether values are `normalized`
   - `disclaimer` (string) — must clearly state the comparative/relative nature of FR data
   - `measurement_data_included` (boolean, optional) — set to `false` when only a published frequency range is available and no CSV/PNG measurement data is included
 
@@ -143,8 +144,9 @@ This prevents downstream systems from confusing qualitative descriptors with mea
 
 ### 2) Frequency response data
 
-Where present, `frequency_response` is intended as **relative reference data**.
-It must include a disclaimer indicating that it is **not** a performance ranking.
+Where present, `frequency_response.data_type` declares how values should be interpreted.
+Most curves use `relative_frequency_response`. Values digitized from a published chart without zero normalization use `digitized_chart_frequency_response` and should include a `response_scale` object.
+Every frequency-response block must include a disclaimer indicating that the data is **not** a performance ranking.
 
 ### 3) Phantom power semantics
 
@@ -165,6 +167,8 @@ Parsers should handle both boolean values and string enums.
 
 The repository may use locale-friendly CSV conventions (e.g., `;` separators).
 When parsing, treat the repository’s CSV dialect as part of the dataset definition (do not assume comma-separated).
+
+The `response_db` column is interpreted together with the model's `frequency_response.data_type` and optional `frequency_response.response_scale`. Do not assume that every curve is normalized to 0 dB.
 
 (See README / README.ru for user-facing parsing notes.)
 

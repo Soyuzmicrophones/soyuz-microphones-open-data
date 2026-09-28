@@ -78,8 +78,9 @@
 ```
 models/microphones/017_TUBE/
 ├── metadata.json
-├── soyuz_017_tube_frequency_response.csv
-└── soyuz_017_tube_frequency_response.png
+└── frequency_response/
+    ├── soyuz_017_tube_frequency_response_cardioid.csv
+    └── soyuz_017_tube_frequency_response_cardioid.png
 ```
 
 ---
@@ -89,10 +90,10 @@ models/microphones/017_TUBE/
 Данные частотной характеристики (АЧХ) предназначены для технического анализа и
 сравнительного изучения поведения микрофонов в слышимом диапазоне частот.
 
-Частотные характеристики предоставляются как **относительные** данные.
+Способ интерпретации каждой частотной характеристики указан в `frequency_response.data_type`. Данные могут быть относительными либо сохранять исходную шкалу оцифрованного графика.
 
 Дополнительные примечания:
-- Для большинства моделей микрофонов капсюли являются **съёмными / сменными** (см. `metadata.json` конкретной модели)
+- У моделей с модульной капсюльной системой капсюли являются **съёмными / сменными** (см. `metadata.json` конкретной модели)
 - Все субъективные, неколичественные описания явно помечаются как `subjective_non_quantitative`
 
 ### Формат CSV
@@ -104,7 +105,7 @@ frequency_hz;response_db
 ```
 
 - `frequency_hz` — частота в герцах (Гц)
-- `response_db` — относительный уровень в децибелах (дБ)
+- `response_db` — уровень в децибелах (дБ); способ отсчёта и наличие нормализации указаны в `metadata.json` конкретной модели
 
 ### Совместимость с Excel
 
@@ -155,9 +156,9 @@ CSV‑файлы используют:
 
 ### Стабильные ссылки (рекомендуется)
 
-Для ссылок и интеграций используйте теги релизов (например, `v1.0.1`), а не ветку `main`.
+Для ссылок и интеграций используйте теги релизов (например, `v1.2.0`), а не ветку `main`.
 Пример (raw-файл по тегу релиза):
-`https://raw.githubusercontent.com/Soyuzmicrophones/soyuz-microphones-open-data/v1.0.1/models/microphones/017_TUBE/metadata.json`
+`https://raw.githubusercontent.com/Soyuzmicrophones/soyuz-microphones-open-data/v1.2.0/models/microphones/017_TUBE/metadata.json`
 
 ---
 

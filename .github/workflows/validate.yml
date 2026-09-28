@@ -16,65 +16,12 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
-      - name: Validate all metadata.json are valid JSON
-        run: |
-          set -e
-          for f in $(find models -name metadata.json); do
-            python -m json.tool "$f" >/dev/null
-          done
-
-      - name: Validate index.json is valid JSON (if present)
-        run: |
-          set -e
-          if [ -f models/index.json ]; then
-            python -m json.tool models/index.json >/dev/null
-          fi
-
-      - name: Check referenced files exist (basic)
-        run: |
-          set -e
-          python - << 'PY'
-          import json, os, glob
-
-          def walk_metadata():
-              for path in glob.glob("models/**/metadata.json", recursive=True):
-                  with open(path, "r", encoding="utf-8") as f:
-                      yield path, json.load(f)
-
-          def check_file(base_dir, rel):
-              if not rel:
-                  return
-              # allow absolute URLs; only check local relative paths
-              if isinstance(rel, str) and (rel.startswith("http://") or rel.startswith("https://")):
-                  return
-              p = os.path.normpath(os.path.join(base_dir, rel))
-              if not os.path.exists(p):
-                  raise SystemExit(f"Missing referenced file: {p}")
-
-          asset_keys = [
-              ("measurements", "frequency_response_csv"),
-              ("measurements", "polar_pattern_png"),
-              ("measurements", "polar_pattern_csv"),
-          ]
-
-          for meta_path, meta in walk_metadata():
-              base_dir = os.path.dirname(meta_path)
-              for a, b in asset_keys:
-                  if isinstance(meta, dict) and a in meta and isinstance(meta[a], dict) and b in meta[a]:
-                      check_file(base_dir, meta[a][b])
-
-          print("OK: referenced files check passed (basic)")
-          PY
-
-      - name: Run repo validation script
-        run: |
-          set -e
-          python tools/validate_repo.py
+      - name: Run repository validation
+        run: python tools/validate_repo.py
 
       - name: Build dist and ensure it is up to date
         run: |
-          set -e
           python tools/build_dist.py
           git diff --exit-code dist/models_flat.ndjson

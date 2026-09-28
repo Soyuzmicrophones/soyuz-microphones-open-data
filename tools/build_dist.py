@@ -53,6 +53,8 @@ def collect_assets(model_dir: Path) -> Dict[str, List[str]]:
             name = p.name.lower()
             if "polar" in name or "pattern" in name:
                 assets["polar_patterns"].append(rel)
+            elif "fr" in name or "frequency" in name or "response" in name:
+                assets["frequency_response"].append(rel)
             else:
                 assets["other"].append(rel)
 
@@ -80,7 +82,7 @@ def main() -> int:
 
         # best-effort id/slug/name extraction without enforcing schema
         model_id = meta.get("id") or meta.get("model_id") or meta.get("sku") or model_dir.name
-        name = meta.get("name") or meta.get("model_name") or model_dir.name
+        name = meta.get("name") or meta.get("model_name") or meta.get("model") or model_dir.name
         slug = meta.get("slug") or meta.get("model_slug") or model_dir.name
 
         model_path = model_dir.relative_to(repo_root).as_posix()

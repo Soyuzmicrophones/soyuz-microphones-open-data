@@ -2,11 +2,11 @@ cff-version: 1.2.0
 title: "SOYUZ Microphones — Open Product Data"
 message: "If you use this dataset, please cite it as below."
 type: dataset
+version: "1.2.0"
+date-released: 2026-09-28
 
 authors:
-  - family-names: "SOYUZ Microphones"
-    given-names: ""
-    affiliation: "SOYUZ Microphones"
+  - name: "SOYUZ Microphones"
 
 repository-code: "https://github.com/soyuzmicrophones/soyuz-microphones-open-data"
 
@@ -32,7 +32,6 @@ preferred-citation:
   type: dataset
   title: "SOYUZ Microphones — Open Product Data"
   author:
-    - family-names: "SOYUZ Microphones"
-      given-names: ""
+    - name: "SOYUZ Microphones"
   year: 2026
   url: "https://github.com/soyuzmicrophones/soyuz-microphones-open-data"
