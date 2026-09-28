@@ -1,24 +1,27 @@
-# SOYUZ Silver 17 – Product Data
+# SOYUZ Silver 17 – Frequency Response Data
 
 The SOYUZ Silver 17 is a large-diaphragm tube condenser microphone designed for professional studio recording applications.
 
-This directory contains structured product metadata for the Silver 17 model.
+This directory contains structured product metadata and relative frequency response data for the Silver 17 model.
 
 ---
 
 ## Included files
 
+- Frequency response curve (cardioid):
+  - CSV (machine-readable)
+  - PNG (visual reference)
 - Model metadata (JSON)
-
-Relative frequency response measurement files are not currently included for this model.
 
 ---
 
-## Data note
+## Measurement note
 
-Published technical specifications are provided as product reference data.
+The supplied chart identifies the polar pattern as cardioid and the measurement environment as an anechoic chamber.
 
-Any qualitative descriptors are explicitly marked as `subjective_non_quantitative` and are not measurement results.
+The CSV is a digitized representation of the supplied chart. Values are approximate and limited by the chart resolution and line thickness.
+
+Frequency response data is provided for comparative and illustrative purposes only.
 
 ---
 

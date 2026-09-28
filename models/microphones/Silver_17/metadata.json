@@ -34,12 +34,19 @@
   },
 
   "frequency_response": {
-    "measurement_data_included": false,
+    "data_type": "relative_frequency_response",
+    "variants": [
+      "cardioid"
+    ],
+    "format": [
+      "csv",
+      "png"
+    ],
     "published_frequency_range_hz": {
       "min": 20,
       "max": 20000
     },
-    "disclaimer": "Published frequency range is provided as a specification; relative frequency response measurement data is not included in this dataset."
+    "disclaimer": "CSV values are digitized from the supplied cardioid frequency response chart and are approximate; provided as relative reference data, not a performance ranking."
   },
 
   "electrical_specifications": {
