@@ -18,6 +18,12 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Validate index JSON files
+        run: |
+          python -m json.tool models/index.json > /dev/null
+          python -m json.tool models/microphones/index.json > /dev/null
+          python -m json.tool models/preamps/index.json > /dev/null
+
       - name: Run repository validation
         run: python tools/validate_repo.py
 
