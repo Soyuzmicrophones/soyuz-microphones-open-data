@@ -25,13 +25,12 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 
 ## [1.1.0] - 2026-02-19
 ### Added
-- Russian-language README and expanded English documentation.
-- Dataset schema documentation.
-- GitHub Actions validation workflows and local validation tools.
-- Flat NDJSON distribution for automated ingestion.
+- Published electrical and physical specifications for individual models where available.
+- Published frequency range fields.
 
 ### Changed
-- Expanded structured metadata for all microphone and preamplifier models.
+- Rebuilt `dist/models_flat.ndjson` to keep the ingestion dataset in sync.
+- Added only optional fields, with no breaking schema changes.
 
 ## [1.0.0] - 2026-01-15
 ### Added
