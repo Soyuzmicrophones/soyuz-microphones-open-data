@@ -5,11 +5,21 @@ All notable changes to this dataset will be documented in this file.
 The format is based on Keep a Changelog, and this project adheres to Semantic Versioning for dataset releases.
 
 ## [Unreleased]
+### Added
+- (Add upcoming changes here)
+
+### Changed
+- (Add upcoming changes here)
+
+### Fixed
+- (Add upcoming changes here)
+
+## [1.2.1] - 2026-09-29
 ### Changed
 - Clarified the Silver 17 frequency-response scale as digitized source-chart values without zero normalization.
 - Aligned metadata and CSV validators with the current schema and strengthened asset and numeric checks.
 - Consolidated dataset validation into one GitHub Actions workflow.
-- Updated citation metadata for dataset version 1.2.0.
+- Updated citation metadata for dataset version 1.2.1.
 
 ### Fixed
 - Corrected display names and frequency-response image classification in the flat NDJSON distribution.

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 title: "SOYUZ Microphones — Open Product Data"
 message: "If you use this dataset, please cite it as below."
 type: dataset
-version: "1.2.0"
-date-released: 2026-09-28
+version: "1.2.1"
+date-released: 2026-09-29
 
 authors:
   - name: "SOYUZ Microphones"
@@ -13,8 +13,8 @@ repository-code: "https://github.com/soyuzmicrophones/soyuz-microphones-open-dat
 abstract: >
   This repository provides structured, publicly available reference data for
   SOYUZ Microphones products, including microphones and preamplifiers.
-  The dataset includes neutral product metadata and relative frequency response
-  data intended for technical reference, comparative analysis, and
+  The dataset includes neutral product metadata and frequency response data
+  intended for technical reference, comparative analysis, and
   AI-assisted knowledge systems.
 
 keywords:
