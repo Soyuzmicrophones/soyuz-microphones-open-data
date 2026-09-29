@@ -14,6 +14,11 @@ The format is based on Keep a Changelog, and this project adheres to Semantic Ve
 ### Fixed
 - (Add upcoming changes here)
 
+## [1.2.2] - 2026-09-29
+### Fixed
+- Corrected the 023 Bomblet and 023 MALFA classification to large-diaphragm condenser.
+- Rebuilt the flat NDJSON distribution to include the corrected 023-series metadata.
+
 ## [1.2.1] - 2026-09-29
 ### Changed
 - Clarified the Silver 17 frequency-response scale as digitized source-chart values without zero normalization.
