@@ -3,7 +3,7 @@
   "model": "023 MALFA",
 
   "classification": {
-    "microphone_category": "small_diaphragm_condenser",
+    "microphone_category": "large_diaphragm_condenser",
     "transducer_type": "condenser",
     "electronics_type": "FET",
     "intended_market_segment": "professional_studio"
